@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Kata Bahasa Arab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tebak Kata Bahasa Arab!</h1>
+        <div id="image-container">
+            <img id="image" src="" alt="Gambar Tebakan" />
+        </div>
+        <div id="question-container">
+            <p>Tebak kata dalam bahasa Arab:</p>
+            <input type="text" id="user-input" placeholder="Masukkan jawaban" />
+            <button onclick="checkAnswer()">Cek Jawaban</button>
+        </div>
+        <div id="result"></div>
+        <div id="score-container">
+            <p>Skor: <span id="score">0</span></p>
+        </div>
+        <button id="next-button" onclick="nextQuestion()">Soal Berikutnya</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
